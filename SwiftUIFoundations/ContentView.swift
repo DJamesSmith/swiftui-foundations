@@ -22,3 +22,8 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+// This project is inspired by Sean Allen’s YouTube tutorial.
+// I’ve coded it here so you can explore, test, and learn from it.
+// Keep building, keep learning — and have fun!
