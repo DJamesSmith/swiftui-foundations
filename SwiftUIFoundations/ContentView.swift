@@ -14,6 +14,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+                .padding()
         }
         .padding()
     }
@@ -23,7 +24,9 @@ struct ContentView: View {
     ContentView()
 }
 
-
+// MARK: - Note
 // This project is inspired by Sean Allen’s YouTube tutorial.
 // I’ve coded it here so you can explore, test, and learn from it.
 // Keep building, keep learning — and have fun!
+
+// https://www.youtube.com/watch?v=b1oC7sLIgpI
