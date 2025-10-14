@@ -31,21 +31,9 @@ struct Basics: View {
 //                .edgesIgnoringSafeArea(.all)
 //        }
 // ------------------------------------------
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .edgesIgnoringSafeArea(.all)
-            VStack {
-                Text("Cupertino, CA")
-                    .font(.system(size: 32, weight: .medium, design: .default))
-                    .foregroundColor(.white)
-            }
-        }
     }
 }
 
 #Preview {
     Basics()
 }
-
-
-// 19:37
