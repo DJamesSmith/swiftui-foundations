@@ -31,6 +31,12 @@ struct Basics: View {
 //                .edgesIgnoringSafeArea(.all)
 //        }
 // ------------------------------------------
+///        Adding images
+//        Image(systemName: "cloud.sun.fill")
+//            .renderingMode(.original)
+//            .resizable()
+//            .aspectRatio(contentMode: .fit)
+//            .frame(width: 40, height: 40)
     }
 }
 
