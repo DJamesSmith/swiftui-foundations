@@ -13,7 +13,7 @@ struct WeatherView: View {
     
     var body: some View {
         ZStack {
-            BackgroundView(isNight: $isNight)
+            BackgroundView(isNight: isNight)
 
             VStack {
                 CityTextView(cityName: "Cupertino, CA")
@@ -68,11 +68,12 @@ struct WeatherDayView: View {
 }
 
 struct BackgroundView: View {
-    @Binding var isNight: Bool
+    var isNight: Bool
     
     var body: some View {
         LinearGradient(gradient: Gradient(colors: [isNight ? .black : .blue, isNight ? .gray : Color("lightBlue")]), startPoint: .topLeading, endPoint: .bottomTrailing)
-            .edgesIgnoringSafeArea(.all)
+//            .edgesIgnoringSafeArea(.all)
+            .ignoresSafeArea()
     }
 }
 
@@ -111,10 +112,12 @@ struct MainWeatherStatusView: View {
     ContentView()
 }
 
-// 1:09:22
+// MARK: Duration complete:
+// 1:18:00
+
 
 // MARK: NOTE
-// If it is unique to the screen we keep this in the same file, components like:
+// If it is unique to the screen we keep this in the same file, coymponents like:
 // 1. WeatherDayView
 // 2. BackgroundView
 // 3. CityTextView
@@ -123,3 +126,9 @@ struct MainWeatherStatusView: View {
 
 // If it is going to be used all over your file or another screen in your app, put that into another file:
 // Like WeatherBUtton
+
+
+// Challenges
+// 1. Build model and refactor HStack with an array
+// 2. Get real data from a weatehr API
+// 3. Build a TabBar that shows multiple cities
