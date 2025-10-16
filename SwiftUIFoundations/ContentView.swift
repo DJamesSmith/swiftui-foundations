@@ -17,7 +17,13 @@ struct ContentView: View {
 //                .padding()
 //        }
 //        .padding()
-        WeatherView()
+// ------------------------------
+//        WeatherAppiOS15Update()
+// ------------------------------
+        WeatherAppiOS16Update()
+// ------------------------------
+        
+// ------------------------------
     }
 }
 

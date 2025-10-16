@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WeatherView: View {
+struct WeatherAppiOS15Update: View {
     
     @State private var isNight = false
     
@@ -54,12 +54,54 @@ struct WeatherDayView: View {
             Text(dayOfWeek)
                 .font(.system(size: 16, weight: .medium, design: .default))
                 .foregroundColor(.white)
+
+// Understanding foregroundStyle, symbolRenderingMode & foregroundColor
+//            Image(systemName: imageName)
+//                .renderingMode(.original)
+//                .resizable()
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 40, height: 40)
+// ------------------------------------------
+//            Image(systemName: imageName)
+//                .symbolRenderingMode(.multicolor)
+//                .symbolRenderingMode(.palette)
+//                .resizable()
+//                .foregroundColor(.red)
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 40, height: 40)
+// ------------------------------------------
+//            Image(systemName: imageName)
+////                .renderingMode(.original)
+////                .symbolRenderingMode(.multicolor)
+////                .symbolRenderingMode(.hierarchical) // black by default
+//                .symbolRenderingMode(.palette)
+//                .resizable()
+////                .foregroundColor(.red)
+//                .foregroundStyle(.mint, .orange, .green)
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 40, height: 40)
+// ------------------------------------------
+//            Image(systemName: imageName)
+//                .symbolRenderingMode(.palette)
+//                .resizable()
+//                .foregroundStyle(.mint, .orange, .green)
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 40, height: 40)
+// ------------------------------------------
+//            Image(systemName: imageName)
+//                .symbolRenderingMode(.hierarchical)
+//                .resizable()
+//                .foregroundColor(.pink)
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: 40, height: 40)
+// ------------------------------------------
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.palette)
                 .resizable()
+                .foregroundColor(.pink)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
-            
+
             Text("\(temperature)°")
                 .font(.system(size: 28, weight: .medium))
                 .foregroundColor(.white)
@@ -113,7 +155,7 @@ struct MainWeatherStatusView: View {
 }
 
 // MARK: Duration complete:
-// 1:18:00
+// 1:28:30
 
 
 // MARK: NOTE

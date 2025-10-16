@@ -15,17 +15,22 @@ struct WeatherButton: View {
     var body: some View {
         Text(title)
             .frame(width: 280, height: 50)
-            .background(backgroundColor)
+            .background(backgroundColor.gradient)
             .foregroundColor(textColor)
             .font(.system(size: 20, weight: .bold, design: .default))
             .cornerRadius(10)
     }
 }
 
-// If it is unique to the screen we keep this in the same file, components like:
-// 1.
-// 2.
-// 3.
+#Preview {
+    ContentView()
+}
+
+// If it is unique to the screen we keep this in the same file, coymponents like:
+// 1. WeatherDayView
+// 2. BackgroundView
+// 3. CityTextView
+// 4. MainWeatherStatusView
 
 
 // If it is going to be used all over your file or another screen in your app, put that into another file:
