@@ -41,6 +41,29 @@ struct WeatherAppiOS16Update: View {
                 Spacer()
             }
         }
+//        .onAppear {
+//            let button = WeatherButton(title: "Change Day Time", textColor: .blue, backgroundColor: .white)
+//            print(type(of: button.body))
+//            
+////            ModifiedContent<
+////                ModifiedContent<
+////                    ModifiedContent<
+////                        ModifiedContent<
+////                            ModifiedContent<Text, _FrameLayout>,
+////                            _BackgroundStyleModifier<AnyGradient>
+////                        >,
+////                        _EnvironmentKeyWritingModifier<
+////                            Optional<Color>
+////                        >
+////                    >,
+////                    _EnvironmentKeyWritingModifier<
+////                        Optional<Font>
+////                    >
+////                >, _ClipEffect<RoundedRectangle
+////            >
+////        >
+//            // Shows the ModifiedContent created over creating as many layers of attributes added to the button such as frame, background, foregroundColor, font and cornerRadius.
+//        }
     }
 }
 
@@ -95,7 +118,7 @@ struct CityTextView16: View {
 struct MainWeatherStatusView16: View {
     var imageName: String
     var temperature: Int
-    
+
     var body: some View {
         VStack(spacing: 10) {
             Image(systemName: imageName)

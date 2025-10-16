@@ -23,7 +23,7 @@ struct WeatherButton: View {
 }
 
 #Preview {
-    ContentView()
+    WeatherButton(title: "Test Title", textColor: .white, backgroundColor: .blue)
 }
 
 // If it is unique to the screen we keep this in the same file, coymponents like:
@@ -35,3 +35,7 @@ struct WeatherButton: View {
 
 // If it is going to be used all over your file or another screen in your app, put that into another file:
 // Like WeatherBUtton
+
+
+// Text Order of attributes:
+// frame -> background -> foregroundColor -> font -> cornerRadius
