@@ -4,6 +4,7 @@ This project is inspired by Sean Allen’s [SwiftUI Fundamentals](https://www.yo
 It focuses on understanding the **core concepts of SwiftUI**, building **custom views**, and writing **modular, reusable components**.
 
 ## 📚 Overview
+![Screenshot 2025-10-17 at 7 21 50 PM](https://github.com/user-attachments/assets/a8a2b986-44a8-4edd-b3c9-ddf260541a13)
 
 The project covers:
 - Building and structuring views using **SwiftUI**.
