@@ -29,6 +29,7 @@ struct SwiftUIButton: View {
 //        .font(.system(size: 20, weight: .bold, design: .default))
     }
 }
+
 #Preview {
     SwiftUIButton(title: "SwiftUI Button", textColor: .white, backgroundColor: .blue)
 }
