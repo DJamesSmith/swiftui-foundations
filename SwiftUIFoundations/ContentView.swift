@@ -20,9 +20,9 @@ struct ContentView: View {
 // ------------------------------
 //        WeatherAppiOS15Update()
 // ------------------------------
-        WeatherAppiOS16Update()
+//        WeatherAppiOS16Update()
 // ------------------------------
-
+        AppleFrameworks()
 // ------------------------------
     }
 }
@@ -37,3 +37,7 @@ struct ContentView: View {
 // Keep building, keep learning — and have fun!
 
 // https://www.youtube.com/watch?v=b1oC7sLIgpI
+
+
+// Duration complete:
+// 2:02:10 Apple Frameworks
